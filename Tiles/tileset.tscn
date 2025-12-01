@@ -6,6 +6,7 @@
 size = Vector2(64, 64)
 
 [node name="tileset" type="Node2D"]
+position = Vector2(-5, 0)
 
 [node name="1" type="Sprite2D" parent="."]
 position = Vector2(-4, 0)
