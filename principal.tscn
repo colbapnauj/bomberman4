@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://c3ceu2bsxmtja"]
 
 [ext_resource type="Texture2D" uid="uid://djnhr15w6f8sy" path="res://background.png" id="1_tr6oq"]
-[ext_resource type="PackedScene" uid="uid://bpk6m425p5khm" path="res://player.tscn" id="2_m7tbw"]
+[ext_resource type="PackedScene" path="res://player.tscn" id="2_m7tbw"]
 [ext_resource type="Texture2D" uid="uid://qqplq5l53kbb" path="res://Tiles/foreground.png" id="2_rrtif"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7tbw"]
