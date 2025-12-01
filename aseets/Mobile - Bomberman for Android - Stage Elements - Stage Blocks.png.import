@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dllikping0hgb"
-path="res://.godot/imported/1.png-88736722e2650ac62729736141df1d3d.ctex"
+uid="uid://ccfe55oxbaloi"
+path="res://.godot/imported/Mobile - Bomberman for Android - Stage Elements - Stage Blocks.png-5852485feb083b36c96661d74d7baa54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://aseets/1.png"
-dest_files=["res://.godot/imported/1.png-88736722e2650ac62729736141df1d3d.ctex"]
+source_file="res://aseets/Mobile - Bomberman for Android - Stage Elements - Stage Blocks.png"
+dest_files=["res://.godot/imported/Mobile - Bomberman for Android - Stage Elements - Stage Blocks.png-5852485feb083b36c96661d74d7baa54.ctex"]
 
 [params]
 

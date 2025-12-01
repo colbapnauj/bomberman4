@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dj3hovwgsnkus"]
 
-[ext_resource type="Texture2D" uid="uid://dllikping0hgb" path="res://aseets/1.png" id="1_cnqe3"]
+[ext_resource type="Texture2D" uid="uid://cj6100adtybtg" path="res://aseets/block.png" id="1_cnqe3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_snd3c"]
-size = Vector2(16, 16)
+size = Vector2(64, 64)
 
 [node name="tileset" type="Node2D"]
+position = Vector2(-5, 0)
 
 [node name="1" type="Sprite2D" parent="."]
 position = Vector2(-4, 0)
@@ -17,7 +18,7 @@ texture = ExtResource("1_cnqe3")
 shape = SubResource("RectangleShape2D_snd3c")
 
 [node name="2" type="Sprite2D" parent="."]
-position = Vector2(12, 0)
+position = Vector2(60, 0)
 texture = ExtResource("1_cnqe3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="2"]
@@ -26,7 +27,7 @@ texture = ExtResource("1_cnqe3")
 shape = SubResource("RectangleShape2D_snd3c")
 
 [node name="3" type="Sprite2D" parent="."]
-position = Vector2(28, 0)
+position = Vector2(124, 0)
 texture = ExtResource("1_cnqe3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="3"]
