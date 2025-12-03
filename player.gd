@@ -4,6 +4,8 @@ extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
 
+var can_put_bomb = true
+
 var direction := Vector2.ZERO
 
 func _physics_process(_delta):
@@ -11,6 +13,7 @@ func _physics_process(_delta):
 	move_and_slide()
 	update_animation()
 	
+	put_bomb()
 
 
 func get_input():
@@ -54,6 +57,21 @@ func morir():
 
 
 
-	
-	
+func put_bomb():
+	if (Input.is_action_just_pressed('tecla_x') && can_put_bomb):
+		var array = get_tree().get_nodes_in_group('main')
+		var newBomb = array[0].bomba.instantiate()
+		newBomb.global_position = global_position
+		get_tree().get_nodes_in_group('nivel')[0].add_child(newBomb)
+		can_put_bomb = false
+	elif (!can_put_bomb):
+		check_bombs()
+		
+		
+
+func check_bombs():
+	var cantBombs = get_tree().get_nodes_in_group('bomba').size()
+	if (cantBombs == 0):
+		can_put_bomb = true
+		
 	
