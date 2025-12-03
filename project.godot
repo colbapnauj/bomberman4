@@ -28,6 +28,10 @@ window/stretch/mode="canvas_items"
 main=""
 nivel=""
 bomba=""
+bloque=""
+tilemap=""
+player_2=""
+raycast=""
 
 [input]
 
