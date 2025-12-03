@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba7dokjk2jmc0"]
+
+[ext_resource type="Texture2D" uid="uid://qqplq5l53kbb" path="res://Tiles/foreground.png" id="1_xtb5c"]
+
+[node name="TilePared" type="Node2D"]
+
+[node name="1" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_xtb5c")
+hframes = 3
+
+[node name="StaticBody2D" type="StaticBody2D" parent="1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1/StaticBody2D"]

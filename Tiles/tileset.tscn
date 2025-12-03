@@ -2,35 +2,19 @@
 
 [ext_resource type="Texture2D" uid="uid://cj6100adtybtg" path="res://aseets/block.png" id="1_cnqe3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_snd3c"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnqe3"]
 size = Vector2(64, 64)
 
 [node name="tileset" type="Node2D"]
-position = Vector2(-5, 0)
 
 [node name="1" type="Sprite2D" parent="."]
-position = Vector2(-4, 0)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_cnqe3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="1"]
+collision_layer = 255
+collision_mask = 255
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="1/StaticBody2D"]
-shape = SubResource("RectangleShape2D_snd3c")
-
-[node name="2" type="Sprite2D" parent="."]
-position = Vector2(60, 0)
-texture = ExtResource("1_cnqe3")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="2/StaticBody2D"]
-shape = SubResource("RectangleShape2D_snd3c")
-
-[node name="3" type="Sprite2D" parent="."]
-position = Vector2(124, 0)
-texture = ExtResource("1_cnqe3")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="3"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="3/StaticBody2D"]
-shape = SubResource("RectangleShape2D_snd3c")
+shape = SubResource("RectangleShape2D_cnqe3")
+debug_color = Color(0.6793378, 0.47706473, 0.45432937, 0.41960785)
