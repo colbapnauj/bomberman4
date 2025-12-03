@@ -1,0 +1,12 @@
+extends Node2D
+
+@export var duration: float
+
+
+func _on_timer_timeout() -> void:
+	$AnimationPlayer.play('explosion')
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	if (anim_name == 'explosion'):
+		queue_free()
