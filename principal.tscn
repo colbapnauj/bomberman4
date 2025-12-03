@@ -1,5 +1,5 @@
 [gd_scene load_steps=10 format=4 uid="uid://c3ceu2bsxmtja"]
-[gd_scene load_steps=11 format=4 uid="uid://c3ceu2bsxmtja"]
+
 
 [ext_resource type="Script" uid="uid://5ioy6q52ifi8" path="res://principal.gd" id="1_emcp4"]
 [ext_resource type="Texture2D" uid="uid://djnhr15w6f8sy" path="res://background.png" id="1_tr6oq"]
