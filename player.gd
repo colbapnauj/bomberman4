@@ -10,6 +10,7 @@ func _physics_process(_delta):
 	get_input()
 	move_and_slide()
 	update_animation()
+	
 
 
 func get_input():
@@ -43,6 +44,14 @@ func update_animation():
 		anim.play("up")
 	elif direction.y > 0:
 		anim.play("down")
+		
+func morir():
+	queue_free()
+
+
+
+
+
 
 
 	
