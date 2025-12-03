@@ -14,6 +14,8 @@ var directions = [
 var direction: Vector2 = Vector2.ZERO
 
 func _ready():
+	
+	print("😒 _ready")
 	randomize()
 	choose_new_direction()
 
@@ -46,5 +48,10 @@ func play_animation_by_direction():
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
+	print("👉 body_entered: ", body.name)
+	print("BODY =", body, " grupos=", body.get_groups())
+	if body.is_in_group("player_2"):
+		print("✔ ES PLAYER, ejecutar morir()")
 		body.morir()
+	else:
+		print("❌ NO es player, ignorar")

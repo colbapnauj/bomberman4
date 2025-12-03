@@ -1,26 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://1d1ne1pn7ju2"]
 
 [ext_resource type="Script" uid="uid://jdnwd5a18lu5" path="res://scenas/bomba.gd" id="1_ixf4i"]
-[ext_resource type="Texture2D" uid="uid://8rr2fhul6lfp" path="res://aseets/SNES_-_Super_Bomberman_4__JPN__-_Miscellaneous_-_Tiles-removebg-preview.png" id="2_ixf4i"]
+[ext_resource type="Texture2D" uid="uid://bp328pds03q2u" path="res://aseets/_SNES - Super Bomberman 4 (JPN) - Miscellaneous - Tiles.png" id="2_ixf4i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ixf4i"]
 size = Vector2(16, 16)
-
-[sub_resource type="Animation" id="Animation_0qveh"]
-resource_name = "idle"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("StaticBody2D/Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [232, 233, 234, 235]
-}
 
 [sub_resource type="Animation" id="Animation_wfiyc"]
 length = 0.001
@@ -52,6 +36,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [293, 313, 333, 353]
+}
+
+[sub_resource type="Animation" id="Animation_0qveh"]
+resource_name = "idle"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticBody2D/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [232, 233, 234, 235]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f26ub"]

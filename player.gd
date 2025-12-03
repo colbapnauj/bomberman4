@@ -47,11 +47,14 @@ func update_animation():
 		anim.play("up")
 	elif direction.y > 0:
 		anim.play("down")
-		
+
+
+
 func morir():
+	# $AnimatedSprite2D.play("death")
+	
+	print("❌ MORIR")
 	queue_free()
-
-
 
 
 
@@ -75,3 +78,9 @@ func check_bombs():
 		can_put_bomb = true
 		
 	
+
+
+func _on_hurtbox_body_entered(body: Node2D) -> void:
+	print("PLAYER BODY =", body, " grupos=", body.get_groups())
+	if body.is_in_group("enemy"):
+		morir()

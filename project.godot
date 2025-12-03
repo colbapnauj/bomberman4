@@ -32,6 +32,8 @@ bloque=""
 tilemap=""
 player_2=""
 raycast=""
+player=""
+enemy=""
 
 [input]
 
